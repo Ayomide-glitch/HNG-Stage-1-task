@@ -104,7 +104,7 @@ function levelUp() {
 function resetGame(gameOver = false) {
     if (gameOver) {
         alert("Game Over! Returning to the home page...");
-        window.location.href = "home.html"; // Redirect only if the game is over
+        window.location.href = "index.html"; // Redirect only if the game is over
     } else {
         score = 0;
         lives = 3;
@@ -148,6 +148,6 @@ document.getElementById("newGameButton").addEventListener("click", function() {
 newRound();
 
 document.getElementById("backToHomeButton").addEventListener("click", function() {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 });
 
