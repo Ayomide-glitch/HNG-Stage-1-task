@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Color Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <div class="home-container">
+        <h1>Welcome to the Color Guessing Game!</h1>
+        <p>Test your color recognition skills and have fun!</p>
+        
+        <!-- Game Instructions -->
+        <div id="gameInstructions">
+            <h2>How to Play:</h2>
+            <ol>
+                <li>A color box will be displayed on the screen.</li>
+                <li>Six color options will be shown below it.</li>
+                <li>Your goal is to select the correct color that matches the color box.</li>
+                <li>Each correct guess increases your score.</li>
+                <li>Click "New Game" to reset and play again.</li>
+            </ol>
+        </div>
+
+        <!-- Start Game Button -->
+        <button id="startGameButton">Start Game</button>
+    </div>
+
+    <script>
+        document.getElementById("startGameButton").addEventListener("click", function() {
+            window.location.href = "game.html"; // Redirect to the game page
+        });
+    </script>
+</body>
+</html>

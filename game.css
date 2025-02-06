@@ -1,0 +1,190 @@
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
+    25% { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
+    50% { background: linear-gradient(to right, #8fd3f4, #84fab0); }
+    75% { background: linear-gradient(to right, #ff9a9e, #ffdde1); }
+    100% { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    animation: backgroundAnimation 10s infinite alternate ease-in-out;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s ease;
+}
+
+
+/* Game Title */
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Color Display Box */
+#colorBox {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Color Options */
+#options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Status */
+#gameStatus {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade {
+    opacity: 0;
+}
+
+
+/* Score */
+#score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Animated Background for New Game Button */
+@keyframes buttonAnimation {
+    0% { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
+    25% { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
+    50% { background: linear-gradient(to right, #8fd3f4, #84fab0); }
+    75% { background: linear-gradient(to right, #ff9a9e, #ffdde1); }
+    100% { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
+}
+#newGameButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-size: 200% auto;
+    animation: buttonAnimation 6s infinite alternate ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+#newGameButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #colorBox {
+        width: 100px;
+        height: 100px;
+    }
+
+    .color-options button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #score, #gameStatus {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #colorBox {
+        width: 80px;
+        height: 80px;
+    }
+
+    .color-options button {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.game-stats p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-button {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 15px; /* Proper padding */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px; /* Fixed height for consistency */
+    line-height: 30px; /* Centers text vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 120px; /* Ensures the button is wide enough */
+    white-space: nowrap; /* Prevents text from wrapping */
+    transition: all 0.3s ease-in-out;
+}
+
+.info-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

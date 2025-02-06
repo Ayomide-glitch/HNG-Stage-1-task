@@ -1,0 +1,77 @@
+/* Home Page Styling */
+/* Paper Texture Background */
+.home {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Example paper texture */
+    background-color: #f5f5dc; /* Light beige color for fallback */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4B4B11;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #4B4B11;
+    margin-bottom: 20px;
+}
+
+/* Start Game Button */
+#startGameButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, #8fd3f4, #84fab0);
+    animation: buttonAnimation 6s infinite alternate ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#startGameButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Instructions */
+#gameInstructions {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#gameInstructions h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #4B4B11;
+}
+
+#gameInstructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#gameInstructions li {
+    font-size: 1.2rem;
+    color: #4B4B11;
+    margin: 8px 0;
+}
